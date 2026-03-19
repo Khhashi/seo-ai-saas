@@ -33,3 +33,28 @@ This is a modern SaaS platform developed for AI-driven SEO analysis, built with 
 ```bash
 git clone [https://github.com/Khhashi/seo-ai-saas.git](https://github.com/Khhashi/seo-ai-saas.git)
 cd seo-ai-saas
+
+2. Install dependencies
+Bash
+pnpm install
+
+3. Configure Environment Variables
+Create a .env.local file and add your keys to connect the services:
+
+Kodebit
+# Clerk (Authentication)
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=...
+CLERK_SECRET_KEY=...
+
+# Convex (Database)
+CONVEX_DEPLOYMENT=...
+NEXT_PUBLIC_CONVEX_URL=...
+
+# OpenAI & BrightData
+OPENAI_API_KEY=...
+BRIGHT_DATA_API_KEY=...
+
+4. Run the project locally
+Bash
+pnpm dev
+Navigate to http://localhost:3000 to see the result.
